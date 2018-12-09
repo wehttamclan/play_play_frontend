@@ -1,48 +1,54 @@
+body {
+  background-color: #0f0f0f; }
+
 .wrapper {
   display: grid;
   justify-content: center;
   grid-template-columns: 25% 25% 25% 25%;
-  grid-template-rows: 200px 200px 200px 200px;
-  background-color: #fff;
-  color: #444; }
+  grid-template-rows: 250px 250px 250px 250px;
+  background-color: #0f0f0f;
+  color: #0f0f0f; }
 
 .box {
-  background-color: #444;
-  color: #fff;
-  font-size: 150%;
-  margin: 25px; }
-
-.hero-image {
-  text-align: center;
-  max-width: 100%;
+  background-color: #0f0f0f;
+  color: #0f0f0f;
+  width: inherit;
+  margin: 25px;
   background-size: cover;
   overflow: hidden;
+  line-height: 250px; }
+
+.hero-box {
+  line-height: 300px; }
+
+.box img {
+  width: 100%;
+  vertical-align: middle; }
+
+.hero-image {
+  max-width: 100%;
   grid-column: 1 / span 4;
   grid-row: 1 / span 2; }
 
 .top-left {
-  width: inherit;
   background-size: cover;
   overflow: hidden;
   grid-column: 1 / span 2;
   grid-row: 3; }
 
 .top-right {
-  width: inherit;
   background-size: cover;
   overflow: hidden;
   grid-column: 3 / span 2;
   grid-row: 3; }
 
 .bottom-left {
-  width: inherit;
   background-size: cover;
   overflow: hidden;
   grid-column: 1 / span 2;
   grid-row: 4; }
 
 .bottom-right {
-  width: inherit;
   background-size: cover;
   overflow: hidden;
   grid-column: 3 / span 2;
