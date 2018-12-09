@@ -1,9 +1,6 @@
-body {
-  margin: 40px; }
-
 .wrapper {
   display: grid;
-  grid-gap: 10px;
+  justify-content: center;
   grid-template-columns: 25% 25% 25% 25%;
   grid-template-rows: 200px 200px 200px 200px;
   background-color: #fff;
@@ -12,25 +9,43 @@ body {
 .box {
   background-color: #444;
   color: #fff;
-  padding: 40px;
-  font-size: 150%; }
+  font-size: 150%;
+  margin: 25px; }
 
-.a {
+.hero-image {
+  text-align: center;
+  max-width: 100%;
   background-size: cover;
   overflow: hidden;
   grid-column: 1 / span 4;
   grid-row: 1 / span 2; }
 
-.b {
-  grid-column: 3;
-  grid-row: 1 / span 2; }
+.top-left {
+  width: inherit;
+  background-size: cover;
+  overflow: hidden;
+  grid-column: 1 / span 2;
+  grid-row: 3; }
 
-.c {
-  grid-column: 1;
-  grid-row: 2; }
+.top-right {
+  width: inherit;
+  background-size: cover;
+  overflow: hidden;
+  grid-column: 3 / span 2;
+  grid-row: 3; }
 
-.d {
-  grid-column: 2;
-  grid-row: 2; }
+.bottom-left {
+  width: inherit;
+  background-size: cover;
+  overflow: hidden;
+  grid-column: 1 / span 2;
+  grid-row: 4; }
+
+.bottom-right {
+  width: inherit;
+  background-size: cover;
+  overflow: hidden;
+  grid-column: 3 / span 2;
+  grid-row: 4; }
 
 /*# sourceMappingURL=styles.css.map */
