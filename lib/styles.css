@@ -1,16 +1,36 @@
-/* # How to edit CSS
-1. Start from the root of the project
-2. Make any changes you want to the styles.scss file
-3. Once you've made changes to your hearts content run "sass lib/styles.scss lib/styles.css" in the command line
-4. This compiles all your changes into CSS from SASS */
+body {
+  margin: 40px; }
 
-.spop {
-  font-size: 44px; }
+.wrapper {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 200px 200px 200px 200px;
+  background-color: #fff;
+  color: #444; }
 
-.spop-grow {
-  font-size: 434px; }
+.box {
+  background-color: #444;
+  color: #fff;
+  padding: 40px;
+  font-size: 150%; }
 
-.spop-mega {
-  font-size: 30000px; }
+.a {
+  background-size: cover;
+  overflow: hidden;
+  grid-column: 1 / span 4;
+  grid-row: 1 / span 2; }
+
+.b {
+  grid-column: 3;
+  grid-row: 1 / span 2; }
+
+.c {
+  grid-column: 1;
+  grid-row: 2; }
+
+.d {
+  grid-column: 2;
+  grid-row: 2; }
 
 /*# sourceMappingURL=styles.css.map */
