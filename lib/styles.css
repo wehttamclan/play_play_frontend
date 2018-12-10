@@ -1,16 +1,208 @@
-/* # How to edit CSS
-1. Start from the root of the project
-2. Make any changes you want to the styles.scss file
-3. Once you've made changes to your hearts content run "sass lib/styles.scss lib/styles.css" in the command line
-4. This compiles all your changes into CSS from SASS */
+body {
+  background-color: black; }
 
-.spop {
-  font-size: 44px; }
+h3 {
+  font-family: 'Bungee', cursive;
+  color: white;
+  font-size: 46px;
+  text-shadow: 0px 0px 3px black; }
 
-.spop-grow {
-  font-size: 434px; }
+.wrapper {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 250px 250px 250px 250px;
+  background-color: black;
+  color: black;
+  margin: 20px 50px 50px 50px; }
 
-.spop-mega {
-  font-size: 30000px; }
+.box {
+  background-color: black;
+  color: black;
+  width: inherit;
+  margin: 25px;
+  background-size: cover;
+  overflow: hidden;
+  line-height: 250px; }
+
+.hero-box {
+  line-height: 500px; }
+
+.box img {
+  width: 100%;
+  line-height: 250px;
+  vertical-align: middle; }
+
+.hero-image {
+  max-width: 100%;
+  grid-column: 1 / span 4;
+  grid-row: 1 / span 2; }
+
+.hero-title {
+  max-width: 100%;
+  grid-column: 1 / span 4;
+  grid-row: 1 / span 2;
+  text-align: left;
+  line-height: 700px;
+  vertical-align: bottom;
+  margin: 25px; }
+
+.top-left {
+  background-size: cover;
+  overflow: hidden;
+  grid-column: 1 / span 2;
+  grid-row: 3; }
+
+.top-left-title {
+  grid-column: 1 / span 2;
+  grid-row: 3;
+  text-align: left;
+  line-height: 350px;
+  vertical-align: bottom;
+  margin: 25px; }
+
+.top-right {
+  background-size: cover;
+  overflow: hidden;
+  grid-column: 3 / span 2;
+  grid-row: 3; }
+
+.top-right-title {
+  grid-column: 3 / span 2;
+  grid-row: 3;
+  text-align: left;
+  line-height: 350px;
+  vertical-align: bottom;
+  margin: 25px; }
+
+.bottom-left {
+  background-size: cover;
+  overflow: hidden;
+  grid-column: 1 / span 2;
+  grid-row: 4; }
+
+.bottom-left-title {
+  grid-column: 1 / span 2;
+  grid-row: 4;
+  text-align: left;
+  line-height: 350px;
+  vertical-align: bottom;
+  margin: 25px; }
+
+.bottom-right {
+  background-size: cover;
+  overflow: hidden;
+  grid-column: 3 / span 2;
+  grid-row: 4; }
+
+.bottom-right-title {
+  grid-column: 3 / span 2;
+  grid-row: 4;
+  text-align: left;
+  line-height: 350px;
+  vertical-align: bottom;
+  margin: 25px; }
+
+.title-bar {
+  text-align: center;
+  font-size: 46px;
+  margin: 10px;
+  color: #ff008c;
+  font-family: 'Bungee', cursive; }
+
+.menu-toggle {
+  cursor: pointer;
+  float: left; }
+
+.search-wrapper {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin: 30px 75px 0px 75px;
+  max-width: 100%; }
+
+.search-text {
+  width: 80%;
+  max-width: 80%;
+  font-size: 36px;
+  border: 0px;
+  border-radius: 75px;
+  padding: 5px 0px 5px 10px;
+  background-color: #636363;
+  box-shadow: inset -5px 5px 5px rgba(0, 0, 0, 0.6);
+  color: #ff008c;
+  font-family: 'Open Sans', sans-serif; }
+
+.search-button {
+  width: 20%;
+  max-width: 20%;
+  font-size: 36px;
+  border: 0px;
+  border-radius: 75px;
+  margin: 5px;
+  background-color: #636363;
+  color: #ff008c;
+  overflow: hidden;
+  font-family: 'Open Sans', sans-serif;
+  cursor: pointer; }
+
+.search-button:active {
+  box-shadow: inset -5px 5px 5px rgba(0, 0, 0, 0.6); }
+
+.hide-nav {
+  transition: 0.25s;
+  color: black; }
+
+.show-nav {
+  transition: 0.5s;
+  color: #ff008c; }
+
+.side-nav {
+  font-family: 'Open Sans', sans-serif;
+  text-align: left;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px; }
+
+.side-nav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s; }
+
+.side-nav a:hover {
+  color: #ff008c; }
+
+.side-nav .close-btn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px; }
+
+.main-menu {
+  transition: 0.5s;
+  margin-left: 180px;
+  opacity: 0.8;
+  filter: blur(3px); }
+
+.main {
+  transition: 0.5s; }
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px; }
+
+  .sidenav a {
+    font-size: 18px; } }
 
 /*# sourceMappingURL=styles.css.map */

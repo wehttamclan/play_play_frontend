@@ -16,9 +16,9 @@
     //   { test: /\.scss$/, loaders: ["style-loader", "css-loader", "sass-loader"] },
     // ]
 //   },
-//   resolve: {
-//     extensions: ['', '.js', '.json', '.css', '.scss']
-//   }
+  // resolve: {
+  //   extensions: ['', '.js', '.json', '.css', '.scss']
+  // }
 // };
 
 const path = require('path');
@@ -48,6 +48,8 @@ module.exports = {
           failOnHint: false
         }
       }]
-    }]
+    },
+
+  ]
   },
 };
