@@ -7,7 +7,6 @@
 
 body {
   background-color: black;
-  text-align: center;
 }
 // grid start
 h3 {
@@ -115,6 +114,19 @@ h3 {
       }
 // grid end
 
+.title-bar {
+  text-align: center;
+  font-size: 46px;
+  margin: 10px;
+  color: #ff008c;
+  font-family: 'Bungee', cursive;
+}
+
+.menu-toggle {
+  cursor: pointer;
+  float: left;
+}
+
 .search-wrapper {
   display: flex;
   justify-content: space-between;
@@ -122,6 +134,7 @@ h3 {
   margin: 30px 75px 0px 75px;
   max-width: 100%;
 }
+
 .search-text {
   width: 80%;
   max-width: 80%;
@@ -145,8 +158,73 @@ h3 {
   color: #ff008c;
   overflow: hidden;
   font-family: 'Open Sans', sans-serif;
+  cursor: pointer;
 }
 
 .search-button:active {
   box-shadow: inset -5px 5px 5px rgba(0,0,0,0.6);
+}
+
+.hide-nav {
+  transition: 0.25s;
+  color: black;
+}
+
+.show-nav {
+  transition: 0.5s;
+  color: #ff008c;
+}
+
+
+
+.side-nav {
+  font-family: 'Open Sans', sans-serif;
+  text-align: left;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.side-nav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.side-nav a:hover {
+    color: #ff008c;
+}
+
+.side-nav .close-btn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.main-menu {
+  transition: 0.5s;
+  margin-left: 180px;
+  opacity: 0.8;
+  filter: blur(3px);
+}
+
+.main{
+  transition: 0.5s;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
 }
