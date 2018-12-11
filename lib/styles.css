@@ -11,7 +11,7 @@ h3 {
   display: grid;
   justify-content: center;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 250px 250px 250px 250px;
+  grid-auto-rows: 250px;
   grid-gap: 50px;
   background-color: black;
   color: black;
@@ -94,6 +94,54 @@ h3 {
 .bottom-right-title {
   grid-column: 2;
   grid-row: 4;
+  text-align: left;
+  vertical-align: bottom; }
+
+.second-top-left {
+  background-size: cover;
+  overflow: hidden;
+  grid-column: 1;
+  grid-row: 5; }
+
+.second-top-left-title {
+  grid-column: 1;
+  grid-row: 5;
+  text-align: left;
+  vertical-align: bottom; }
+
+.second-top-right {
+  background-size: cover;
+  overflow: hidden;
+  grid-column: 2;
+  grid-row: 5; }
+
+.second-top-right-title {
+  grid-column: 2;
+  grid-row: 5;
+  text-align: left;
+  vertical-align: bottom; }
+
+.second-bottom-left {
+  background-size: cover;
+  overflow: hidden;
+  grid-column: 1;
+  grid-row: 6; }
+
+.second-bottom-left-title {
+  grid-column: 1;
+  grid-row: 6;
+  text-align: left;
+  vertical-align: bottom; }
+
+.second-bottom-right {
+  background-size: cover;
+  overflow: hidden;
+  grid-column: 2;
+  grid-row: 6; }
+
+.second-bottom-right-title {
+  grid-column: 2;
+  grid-row: 6;
   text-align: left;
   vertical-align: bottom; }
 
