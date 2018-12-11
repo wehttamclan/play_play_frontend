@@ -26,22 +26,26 @@ h3 {
     margin: 20px 50px 50px 50px;
 }
   .box {
+    display: flex;
     background-color: black;
     color: black;
     width: inherit;
     background-size: cover;
     overflow: hidden;
-    line-height: 250px;
   }
 
-  .hero-box {
-    line-height: 500px;
+  .hero-box img {
+    padding-top: 360px;
+    align-self: center;
+    justify-content: center;
+    width: 100%;
   }
 
   .box img {
+    padding-top: 180px;
+    align-self: center;
+    justify-content: center;
     width: 100%;
-    line-height: 250px;
-    vertical-align: middle;
   }
     .hero-image {
       max-width: 100%;
@@ -53,8 +57,7 @@ h3 {
       grid-column: 1 / span 2;
       grid-row: 1 / span 2;
       text-align: left;
-      line-height: 700px;
-      vertical-align: bottom
+      align-self: baseline;
     }
       .top-left {
         background-size: cover;
@@ -66,7 +69,6 @@ h3 {
         grid-column: 1;
         grid-row: 3 ;
         text-align: left;
-        line-height: 350px;
         vertical-align: bottom;
       }
       .top-right {
@@ -79,7 +81,6 @@ h3 {
         grid-column: 2;
         grid-row: 3 ;
         text-align: left;
-        line-height: 350px;
         vertical-align: bottom;
       }
       .bottom-left {
@@ -92,7 +93,6 @@ h3 {
         grid-column: 1;
         grid-row: 4 ;
         text-align: left;
-        line-height: 350px;
         vertical-align: bottom;
       }
       .bottom-right {
@@ -104,7 +104,6 @@ h3 {
         grid-column: 2;
         grid-row: 4 ;
         text-align: left;
-        line-height: 350px;
         vertical-align: bottom;
       }
 // grid end
