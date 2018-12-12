@@ -32,126 +32,13 @@ h3 {
   grid-column: 1; }
 
 .box img {
-  align-self: center;
-  justify-content: center;
-  width: 100%; }
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover;
+}
 
-/* .hero-box img {
-  padding-top: 330px;
-  align-self: center;
-  justify-content: center;
-  width: 100%; } */
-
-
-/* .hero-image {
-  max-width: 100%;
-  grid-column: 1 / span 2;
-  grid-row: 1 / span 2; } */
-
-/* .hero-title {
-  max-width: 100%;
-  grid-column: 1 / span 2;
-  grid-row: 1 / span 2;
-  text-align: left;
-  align-self: baseline; } */
-
-/*
-.top-left {
-  background-size: cover;
-  overflow: hidden;
-  grid-column: 1;
-  grid-row: 3; }
-
-.top-left-title {
-  grid-column: 1;
-  grid-row: 3;
-  text-align: left;
-  vertical-align: bottom; }
-
-.top-right {
-  background-size: cover;
-  overflow: hidden;
-  grid-column: 2;
-  grid-row: 3; }
-
-.top-right-title {
-  grid-column: 2;
-  grid-row: 3;
-  text-align: left;
-  vertical-align: bottom; }
-
-.bottom-left {
-  background-size: cover;
-  overflow: hidden;
-  grid-column: 1;
-  grid-row: 4; }
-
-.bottom-left-title {
-  grid-column: 1;
-  grid-row: 4;
-  text-align: left;
-  vertical-align: bottom; }
-
-.bottom-right {
-  background-size: cover;
-  overflow: hidden;
-  grid-column: 2;
-  grid-row: 4; }
-
-.bottom-right-title {
-  grid-column: 2;
-  grid-row: 4;
-  text-align: left;
-  vertical-align: bottom; }
-
-.second-top-left {
-  background-size: cover;
-  overflow: hidden;
-  grid-column: 1;
-  grid-row: 5; }
-
-.second-top-left-title {
-  grid-column: 1;
-  grid-row: 5;
-  text-align: left;
-  vertical-align: bottom; }
-
-.second-top-right {
-  background-size: cover;
-  overflow: hidden;
-  grid-column: 2;
-  grid-row: 5; }
-
-.second-top-right-title {
-  grid-column: 2;
-  grid-row: 5;
-  text-align: left;
-  vertical-align: bottom; }
-
-.second-bottom-left {
-  background-size: cover;
-  overflow: hidden;
-  grid-column: 1;
-  grid-row: 6; }
-
-.second-bottom-left-title {
-  grid-column: 1;
-  grid-row: 6;
-  text-align: left;
-  vertical-align: bottom; }
-
-.second-bottom-right {
-  background-size: cover;
-  overflow: hidden;
-  grid-column: 2;
-  grid-row: 6; }
-
-.second-bottom-right-title {
-  grid-column: 2;
-  grid-row: 6;
-  text-align: left;
-  vertical-align: bottom; }
-*/
 
 .title-bar {
   text-align: center;
