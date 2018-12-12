@@ -313,7 +313,10 @@ h3 {
 
 .tracks-holder {
   background-color: #636363;
-  box-shadow: inset -5px 5px 5px rgba(0, 0, 0, 0.6); }
+  box-shadow: inset -5px 5px 5px rgba(0, 0, 0, 0.6);
+  height: 400px;
+  overflow: scroll;
+  margin: 25px 50px 50px 50px; }
 
 p {
   font-family: 'Open Sans', sans-serif;
@@ -323,8 +326,37 @@ p {
   width: 200px; }
 
 .single-track {
+  transition: 0.5s;
+  font-size: 22px;
   text-align: center;
   display: flex;
-  justify-content: space-around; }
+  justify-content: space-around;
+  background-color: black;
+  color: gray;
+  padding: 10px 25px 10px 25px;
+  margin: 2px 25px 2px 25px;
+  box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.6); }
+
+.single-track:hover {
+  transition: 0.2s;
+  transform: scale(1.03);
+  cursor: pointer; }
+
+.tracks-holder::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.3); }
+
+.tracks-holder::-webkit-scrollbar {
+  width: 12px;
+  background-color: black; }
+
+.tracks-holder::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #ff008c; }
+
+.tracks-holder::-webkit-scrollbar-corner {
+  background: black; }
 
 /*# sourceMappingURL=styles.css.map */
