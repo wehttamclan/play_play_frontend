@@ -10,7 +10,7 @@ h3 {
 .wrapper {
   display: grid;
   justify-content: center;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, 300px);
   grid-auto-rows: 250px;
   grid-gap: 50px;
   background-color: black;
@@ -18,37 +18,44 @@ h3 {
   margin: 20px 50px 50px 50px; }
 
 .box {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: 1;
   background-color: black;
-  color: black;
-  width: inherit;
-  background-size: cover;
   overflow: hidden; }
 
-.hero-box img {
+.hero-box {
+  grid-column: 1 / -1;
+  grid-row: 1 / span 2; }
+
+.box h3 {
+  grid-column: 1; }
+
+.box img {
+  align-self: center;
+  justify-content: center;
+  width: 100%; }
+
+/* .hero-box img {
   padding-top: 330px;
   align-self: center;
   justify-content: center;
-  width: 100%; }
+  width: 100%; } */
 
-.box img {
-  padding-top: 160px;
-  align-self: center;
-  justify-content: center;
-  width: 100%; }
 
-.hero-image {
+/* .hero-image {
   max-width: 100%;
   grid-column: 1 / span 2;
-  grid-row: 1 / span 2; }
+  grid-row: 1 / span 2; } */
 
-.hero-title {
+/* .hero-title {
   max-width: 100%;
   grid-column: 1 / span 2;
   grid-row: 1 / span 2;
   text-align: left;
-  align-self: baseline; }
+  align-self: baseline; } */
 
+/*
 .top-left {
   background-size: cover;
   overflow: hidden;
@@ -144,6 +151,7 @@ h3 {
   grid-row: 6;
   text-align: left;
   vertical-align: bottom; }
+*/
 
 .title-bar {
   text-align: center;
