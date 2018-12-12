@@ -99,7 +99,14 @@ h3 {
   cursor: pointer; }
 
 .search-button:active {
-  box-shadow: inset -5px 5px 5px rgba(0, 0, 0, 0.6); }
+  box-shadow: inset -5px 5px 5px rgba(0, 0, 0, 0.6); 
+  font-weight: 700; }
+
+.search-button:disabled {
+  color: #757575;
+  font-weight: 300;
+  cursor: not-allowed;
+}
 
 .hide-nav {
   transition: 0.25s;
