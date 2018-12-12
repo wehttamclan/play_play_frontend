@@ -145,6 +145,67 @@ h3 {
   text-align: left;
   vertical-align: bottom; }
 
+.show-grid {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  grid-gap: 5px;
+  background-color: black;
+  color: black;
+  margin: 50px; }
+
+.album {
+  display: flex;
+  background-color: black;
+  color: black;
+  width: inherit;
+  background-size: cover;
+  overflow: hidden; }
+
+.hero-show img {
+  align-self: center;
+  justify-content: center;
+  width: 100%; }
+
+.album img {
+  align-self: center;
+  justify-content: center;
+  width: 100%; }
+
+.hero-show {
+  align-self: center;
+  justify-content: center;
+  grid-column: 1;
+  grid-row: 1 / span 2; }
+
+.hero-show-title {
+  grid-column: 1;
+  grid-row: 1 / span 2; }
+
+.album1 {
+  grid-column: 2;
+  grid-row: 1; }
+
+.album2 {
+  grid-column: 3;
+  grid-row: 1; }
+
+.album3 {
+  grid-column: 4;
+  grid-row: 1; }
+
+.album4 {
+  grid-column: 2;
+  grid-row: 2; }
+
+.album5 {
+  grid-column: 3;
+  grid-row: 2; }
+
+.album6 {
+  grid-column: 4;
+  grid-row: 2; }
+
 .title-bar {
   text-align: center;
   font-size: 46px;
@@ -246,5 +307,24 @@ h3 {
 
   .sidenav a {
     font-size: 18px; } }
+.tracks-text {
+  text-align: center;
+  text-decoration: underline; }
+
+.tracks-holder {
+  background-color: #636363;
+  box-shadow: inset -5px 5px 5px rgba(0, 0, 0, 0.6); }
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 200px; }
+
+.single-track {
+  text-align: center;
+  display: flex;
+  justify-content: space-around; }
 
 /*# sourceMappingURL=styles.css.map */
