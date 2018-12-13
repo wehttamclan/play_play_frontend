@@ -59,6 +59,8 @@ Artist results could include their name without having to hover.
 
 Scroll areas could be responsive to the size of the screen or page length.
 
+There is no way to delete songs from a playlist or add favorite songs without adding to a playlist.
+
 ## Built With
 
 * [JavaScript](https://www.javascript.com/)
