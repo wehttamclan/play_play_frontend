@@ -11,7 +11,7 @@
   <div class="side-nav">
     <a href="javascript:void(0)" class="close-btn">&times;</a>
     <a href="#">Favorites</a>
-    <a href="#">Playlists</a>
+    <a href="#" class="playlists-link">Playlists</a>
   </div>
   <div class="main">
     <div class="title-bar">
@@ -63,12 +63,13 @@
       </div>
 
       <div class="tracks-title">
+        <h3 class="addSuccess">Added Songs to Playlist!<h3>
         <h3 class="tracks-text">Tracks</h3>
         <button type="button" class="addToP artistShowAdd">+Playlist</button>
       </div>
 
       <div class="playlist-holder">
-        <button type="button" class="addToP playlistShowAdd">Add to Playlist(s)</button>
+        <button type="button" class="addToP playlistShowAdd runAddP">Add to Playlist(s)</button>
         <button type="button" class="close-add">x</button>
         <div class="playlist-list">
         </div>
@@ -89,7 +90,8 @@
 
     </div>
 
-
+    <div class="playlists">
+    </div>
   </div>
   <script src="./lib/index.js"></script>
 </body>
