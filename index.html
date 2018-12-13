@@ -64,11 +64,18 @@
 
       <div class="tracks-title">
         <h3 class="tracks-text">Tracks</h3>
-        <button type="button" class="addToP">+Playlist</button>
+        <button type="button" class="addToP artistShowAdd">+Playlist</button>
       </div>
 
-      <div class="addHolder">
-
+      <div class="playlist-holder">
+        <button type="button" class="addToP playlistShowAdd">Add to Playlist(s)</button>
+        <button type="button" class="close-add">x</button>
+        <div class="playlist-list">
+        </div>
+        <div class="create-playlist">
+          <input type="text" placeholder="Create New Playlist Here" class="new-playlist-text">
+          <button type="submit" class="create-playlist-button addToP playlistShowAdd" disabled>Add to New Playlist</button>
+        </div>
       </div>
 
       <div class="track-attributes">
