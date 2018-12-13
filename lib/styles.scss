@@ -1,4 +1,6 @@
 
+
+
 // # How to edit CSS
 // 1. Start from the root of the project
 // 2. Make any changes you want to the styles.scss file
@@ -8,154 +10,162 @@
 body {
   background-color: black;
 }
-// grid start
+
 h3 {
   font-family: 'Bungee', cursive;
   color: white;
   font-size: 46px;
   text-shadow: 0px 0px 3px black;
 }
+
+h4 {
+  font-family: 'Bungee', cursive;
+  color: rgb(190,190,190);
+  font-size: 32px;
+  text-shadow: 0px 0px 3px black;
+}
+
+
+.pppp:hover {
+  cursor: pointer;
+}
+
+// start grid
 .wrapper {
     display: grid;
     justify-content: center;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(30%, 30%));
     grid-auto-rows: 250px;
-    grid-gap: 50px;
+    grid-gap: 10px;
     background-color: black;
     color: black;
     margin: 20px 50px 50px 50px;
 }
   .box {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 1;
     background-color: black;
-    color: black;
-    width: inherit;
-    background-size: cover;
     overflow: hidden;
   }
 
-  .hero-box img {
-    padding-top: 330px;
-    align-self: center;
-    justify-content: center;
-    width: 100%;
+  .hero-box {
+    grid-column: 1 / -1;
+    grid-row: 1 / span 2;
   }
 
+  // .box h3 {
+  //   grid-column: 1;
+  // }
+
   .box img {
-    padding-top: 160px;
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .box-overlay {
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+    background: rgba(255, 0, 140, 0.3);
+    position: relative;
+    display: grid;
+    justify-items: start;
+    align-items: center;
+    transition: 0.3s;
+    transform: translateY(100%);
+  }
+
+  .box:hover .box-overlay {
+    transform: translateY(0%);
+  }
+
+  .box:hover {
+    cursor: pointer;
+  }
+// grid end
+
+// show grid start
+.show-grid {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 2fr 1fr 1fr 1fr ;
+  grid-gap: 5px;
+  background-color: black;
+  color: black;
+  margin: 50px;
+}
+
+.album {
+  display: flex;
+  background-color: black;
+  color: black;
+  width: inherit;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.hero-show img {
+  align-self: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.album img {
+  align-self: center;
+  justify-content: center;
+  width: 100%;
+}
+  .hero-show {
     align-self: center;
     justify-content: center;
-    width: 100%;
+    grid-column: 1;
+    grid-row: 1 / span 2;
   }
-    .hero-image {
-      max-width: 100%;
-      grid-column: 1 / span 2;
-      grid-row: 1 / span 2;
-    }
-    .hero-title {
-      max-width: 100%;
-      grid-column: 1 / span 2;
-      grid-row: 1 / span 2;
-      text-align: left;
-      align-self: baseline;
-    }
-      .top-left {
-        background-size: cover;
-        overflow: hidden;
-        grid-column: 1;
-        grid-row: 3 ;
-      }
-      .top-left-title {
-        grid-column: 1;
-        grid-row: 3 ;
-        text-align: left;
-        vertical-align: bottom;
-      }
-      .top-right {
-        background-size: cover;
-        overflow: hidden;
-        grid-column: 2;
-        grid-row: 3 ;
-      }
-      .top-right-title {
-        grid-column: 2;
-        grid-row: 3 ;
-        text-align: left;
-        vertical-align: bottom;
-      }
-      .bottom-left {
-        background-size: cover;
-        overflow: hidden;
-        grid-column: 1;
-        grid-row: 4 ;
-      }
-      .bottom-left-title {
-        grid-column: 1;
-        grid-row: 4 ;
-        text-align: left;
-        vertical-align: bottom;
-      }
-      .bottom-right {
-        background-size: cover;
-        overflow: hidden;
-        grid-column: 2;
-        grid-row: 4 ;
-      }
-      .bottom-right-title {
-        grid-column: 2;
-        grid-row: 4 ;
-        text-align: left;
-        vertical-align: bottom;
-      }
-      .second-top-left {
-        background-size: cover;
-        overflow: hidden;
-        grid-column: 1;
-        grid-row: 5 ;
-      }
-      .second-top-left-title {
-        grid-column: 1;
-        grid-row: 5 ;
-        text-align: left;
-        vertical-align: bottom;
-      }
-      .second-top-right {
-        background-size: cover;
-        overflow: hidden;
-        grid-column: 2;
-        grid-row: 5 ;
-      }
-      .second-top-right-title {
-        grid-column: 2;
-        grid-row: 5 ;
-        text-align: left;
-        vertical-align: bottom;
-      }
-      .second-bottom-left {
-        background-size: cover;
-        overflow: hidden;
-        grid-column: 1;
-        grid-row: 6 ;
-      }
-      .second-bottom-left-title {
-        grid-column: 1;
-        grid-row: 6 ;
-        text-align: left;
-        vertical-align: bottom;
-      }
-      .second-bottom-right {
-        background-size: cover;
-        overflow: hidden;
-        grid-column: 2;
-        grid-row: 6 ;
-      }
-      .second-bottom-right-title {
-        grid-column: 2;
-        grid-row: 6 ;
-        text-align: left;
-        vertical-align: bottom;
-      }
-// grid end
+
+  .hero-show-title {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+  }
+
+  .album1 {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .album2 {
+    grid-column: 3;
+    grid-row: 1;
+  }
+  .album3 {
+    grid-column: 4;
+    grid-row: 1;
+  }
+  .album4 {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  .album5 {
+    grid-column: 3;
+    grid-row: 2;
+  }
+  .album6{
+    grid-column: 4;
+    grid-row: 2;
+  }
+// show grid end
+
+.search-button:active {
+  box-shadow: inset -5px 5px 5px rgba(0, 0, 0, 0.6);
+  font-weight: 700;
+}
+
+.search-button:disabled {
+  color: #757575;
+  font-weight: 300;
+  cursor: not-allowed;
+}
 
 .title-bar {
   text-align: center;
@@ -270,4 +280,275 @@ h3 {
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
+}
+
+.tracks-text {
+  grid-column: 2;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.tracks-title {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  grid-gap: 50px;
+  background-color: black;
+  color: black;
+}
+
+.addSuccess {
+  grid-column: 1;
+  text-align: center;
+  text-decoration: underline;
+  display: none;
+  color: #ff008c;
+  align-self: end;
+}
+
+.tracks-holder {
+  background-color: #636363;
+  box-shadow: inset -5px 5px 5px rgba(0,0,0,0.6);
+  height: 400px;
+  overflow: scroll;
+  margin: 15px 50px 50px 50px;
+}
+
+.track-attributes {
+  margin: 20px 75px 0px 75px;
+  padding: 0px 25px 0px 25px;
+  display: flex;
+  justify-content: space-around;
+  font-size: 26px;
+  text-decoration: underline;
+  color: gray;
+  text-align: center;
+}
+
+.addToP {
+  pointer-events: none;
+  transition: 0.5s;
+  grid-column: 3;
+  width: 100px;
+  justify-content: start;
+  font-size: 20px;
+  border: 0px;
+  border-radius: 75px;
+  margin: 5px;
+  background-color: gray;
+  color: black;
+  overflow: hidden;
+  font-family: 'Open Sans', sans-serif;
+  cursor: pointer;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 200px;
+}
+
+.single-track {
+  overflow: visible;
+  transition: 0.5s;
+  font-size: 22px;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  background-color: black;
+  color: gray;
+  padding: 10px 25px 10px 25px;
+  margin: 2px 25px 2px 25px;
+  box-shadow: -5px 5px 5px rgba(0,0,0,0.6);
+}
+
+.single-track:hover {
+  transition: 0.2s;
+  transform: scale(1.03);
+  cursor: pointer;
+}
+
+.tracks-holder::-webkit-scrollbar-track {
+	-webkit-box-shadow: -5px 5px 5px rgba(0,0,0,0.6);
+	border-radius: 10px;
+	background-color: rgba(0,0,0,0.3);
+}
+
+.tracks-holder::-webkit-scrollbar {
+	width: 12px;
+	background-color: black;
+}
+
+.tracks-holder::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	-webkit-box-shadow: -5px 5px 5px rgba(0,0,0,0.6);
+	background-color: #ff008c;
+}
+.tracks-holder::-webkit-scrollbar-corner {
+  background: black;
+}
+
+
+.playlist-holder {
+    transition: 0.5s;
+    text-align: center;
+    position: absolute;
+    top: auto;
+    left: 35%;
+    width: 30%;
+    height: 450px;
+    background-color: rgba(0,0,0,0.85);
+    border-radius: 10px;
+    box-shadow: -5px 5px 5px rgba(0,0,0,0.6);
+    border: solid 2px #ff008c;
+    display: none;
+}
+
+.playlist-list {
+  padding: 25px;
+  text-align: center;
+  overflow: scroll;
+  height: 40%;
+}
+
+.playlist-list::-webkit-scrollbar-track {
+	border-radius: 10px;
+	background-color: rgba(0,0,0,0.0);
+}
+
+.playlist-list::-webkit-scrollbar {
+	width: 12px;
+	background-color: rgba(0,0,0,0.0);
+}
+
+.playlist-list::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	background-color: #ff008c;
+}
+.playlist-list::-webkit-scrollbar-corner {
+  background: rgba(0,0,0,0.0);
+}
+
+.single-playlist {
+  transition: 0.5s;
+  font-size: 22px;
+  text-align: center;
+  background-color: black;
+  color: gray;
+  padding: 10px 25px 10px 25px;
+  margin: 4px auto 4px auto;
+  box-shadow: -5px 5px 5px rgba(0,0,0,0.6);
+  border: solid 1px gray;
+}
+.single-playlist:hover {
+  transition: 0.2s;
+  transform: scale(1.03);
+  cursor: pointer;
+}
+
+.playlistShowAdd {
+  width: 160px;
+  margin: 20px 0px 15px 0px;
+  pointer-events: none;
+}
+
+.create-playlist {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.create-playlist-button {
+  width: 300px;
+}
+
+.new-playlist-text {
+  width: 80%;
+  font-size: 22px;
+  border: 0px;
+  border-radius: 75px;
+  padding: 5px 0px 5px 10px;
+  background-color: #636363;
+  box-shadow: inset -5px 5px 5px rgba(0,0,0,0.6);
+  color: #ff008c;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.close-add {
+  background-color: #ff008c;
+  color: black;
+  border-radius: 10px;
+  border: 0px;
+  float: right;
+  top: 10;
+  margin: 10px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+
+.playlists {
+  display: none;
+  text-align: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.playlist-card-holder {
+  background-color: #636363;
+  height: 400px;
+  width: 30%;
+  margin: 30px 50px 50px 50px;
+}
+
+.playlist-card {
+  background-color: #636363;
+  margin: 15px 20px 20px 20px;
+  box-shadow: inset -5px 5px 5px rgba(0,0,0,0.6);
+  overflow: scroll;
+  width: 90%;
+  height: 90%;
+  text-align: center;
+}
+
+.single-song {
+  overflow: visible;
+  transition: 0.5s;
+  font-size: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  color: gray;
+  padding: 10px 15px 10px 15px;
+  margin: 2px 15px 2px 15px;
+  box-shadow: -5px 5px 5px rgba(0,0,0,0.6);
+}
+
+.single-song:hover {
+  transition: 0.2s;
+  transform: scale(1.03);
+  cursor: pointer;
+}
+
+.playlist-card::-webkit-scrollbar-track {
+	border-radius: 10px;
+	background-color: #636363;
+}
+
+.playlist-card::-webkit-scrollbar {
+	width: 12px;
+	background-color: #636363;
+}
+
+.playlist-card::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	background-color: #ff008c;
+}
+.playlist-card::-webkit-scrollbar-corner {
+  background: #636363;
 }
