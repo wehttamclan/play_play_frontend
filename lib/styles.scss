@@ -24,9 +24,9 @@ h3 {
 .wrapper {
     display: grid;
     justify-content: center;
-    grid-template-columns: repeat(auto-fit, 400px);
+    grid-template-columns: repeat(auto-fit, minmax(30%, 30%));
     grid-auto-rows: 250px;
-    grid-gap: 50px;
+    grid-gap: 10px;
     background-color: black;
     color: black;
     margin: 20px 50px 50px 50px;
