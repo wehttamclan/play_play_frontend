@@ -422,6 +422,15 @@ p {
   flex-wrap: wrap;
   display: flex; }
 
+.playlist-title {
+  transition: 0.5s;
+  background-color: black;
+  cursor: pointer; }
+
+.playlist-title:hover {
+  transition: 0.2s;
+  transform: scale(1.05); }
+
 .playlist-card-holder {
   background-color: #636363;
   height: 400px;
@@ -469,5 +478,12 @@ p {
 
 .playlist-card::-webkit-scrollbar-corner {
   background: #636363; }
+
+.playlistShowRemove {
+  margin-top: 15px;
+  width: 200px; }
+
+.playlists-holder-page {
+  text-align: center; }
 
 /*# sourceMappingURL=styles.css.map */
