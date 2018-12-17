@@ -10,8 +10,7 @@
 <body>
   <div class="side-nav">
     <a href="javascript:void(0)" class="close-btn">&times;</a>
-    <a href="#">Favorites</a>
-    <a href="#" class="playlists-link">Playlists</a>
+    <a href="/" class="playlists-link">Playlists</a>
   </div>
   <div class="main">
     <div class="title-bar">
@@ -75,7 +74,7 @@
         </div>
         <div class="create-playlist">
           <input type="text" placeholder="Create New Playlist Here" class="new-playlist-text">
-          <button type="submit" class="create-playlist-button addToP playlistShowAdd" disabled>Add to New Playlist</button>
+          <button class="create-playlist-button addToP playlistShowAdd" disabled>Add to New Playlist</button>
         </div>
       </div>
 
@@ -90,7 +89,10 @@
 
     </div>
 
-    <div class="playlists">
+    <div class="playlists-holder-page">
+      <button class="playlistShowRemove addToP" style="background-color: gray;pointer-events: none;">Delete Playlists</button>
+      <div class="playlists">
+      </div>
     </div>
   </div>
   <script src="./lib/index.js"></script>
