@@ -4,7 +4,7 @@
 
 This is the font end app that is built off the backend of the same name.  It allows a user to search for music artists and get a list of songs they've made.  The user can then select songs and add them to playlists.
 
-You can use the app in production on [GitHub pages](https://bghalami.github.io/play_play_frontend/).
+You can use the app in production on [GitHub pages](https://github.com/wehttamclan/play_play_backend).
 
 ## Using the app
 
