@@ -1,6 +1,6 @@
 # Play Play Productions
 
-#### Created By Ben Ghalami and Matt Peters
+#### Created By Matt Peters and Ben Ghalami
 
 This is the font end app that is built off the backend of the same name.  It allows a user to search for music artists and get a list of songs they've made.  The user can then select songs and add them to playlists.
 
