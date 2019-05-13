@@ -1,10 +1,10 @@
 # Play Play Productions
 
-#### Created By Ben Ghalami and Matt Peters
+#### Created By Matt Peters and Ben Ghalami
 
 This is the font end app that is built off the backend of the same name.  It allows a user to search for music artists and get a list of songs they've made.  The user can then select songs and add them to playlists.
 
-You can use the app in production on [GitHub pages](https://bghalami.github.io/play_play_frontend/).
+You can use the app in production on [GitHub pages](https://wehttamclan.github.io/play_play_frontend/).
 
 ## Using the app
 
@@ -18,7 +18,7 @@ You can use the app in production on [GitHub pages](https://bghalami.github.io/p
 
 ## Contributing
 
-If you would like to contribute, you can follow the steps in the next two sections to get running on your machine.  The API this connects to can be located at [here](https://github.com/bghalami/play_play_backend).
+If you would like to contribute, you can follow the steps in the next two sections to get running on your machine.  The API this connects to can be located at [here](https://github.com/wehttamclan/play_play_backend).
 
 ## Initial Setup
 
